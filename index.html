@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple Dark Mode</title>
+
+		<style>
+			body {
+				width: 70%;
+				margin: 10% auto;
+			}
+
+			#darkmode {
+				background: black;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Dark Mode</h1>
+		<br />
+		<h2>By. Nurrochmat Saptoaji</h2>
+		<br />
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint sequi
+			voluptatum similique itaque excepturi tenetur magnam neque. Ab cum rerum
+			vero neque aut quis maxime illo quidem voluptatem! Ab?
+		</p>
+		<br />
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, vel ex.
+			Fugiat commodi eum sit accusantium ipsa iure, nesciunt tempora, ut dolores
+			at, odio eaque illo? Nemo assumenda omnis nesciunt.
+		</p>
+		<br />
+		<br />
+		<br />
+		<button onclick="setDarkMode(false)">Light</button>
+		<button onclick="setDarkMode(true)">Dark</button>
+
+		<script>
+			function setDarkMode(isDark) {
+				if (isDark) {
+					document.body.setAttribute("id", "darkmode");
+				} else {
+					document.body.setAttribute("id", "");
+				}
+			}
+		</script>
+	</body>
+</html>
